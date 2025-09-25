@@ -1,0 +1,36 @@
+let flag = "Indonesia";
+let name = "Florian";
+let age = 21;
+let gender = "male";
+let hobby = "gaming";
+
+let introduction = [flag, name, age, gender, hobby];
+console. log(introduction[1],introduction[2]);
+console.log("alpha" + gender);
+age = age +3;
+console.log (age);
+
+//Create a variable playerScore
+//Create a function that adds one to the playerScore variable (like the player score or computer score we created last week in scratch) everytime the function is called
+//Create a function that displays the value of the playerScore variable
+
+let playerScore = 0;
+
+function plusOne(){
+    playerScore = playerScore + 1;
+}
+
+function displayScore(){
+    console.log("Player score:", playerScore);
+}
+
+plusOne();
+plusOne();
+plusOne();
+plusOne();
+displayScore();
+
+if (playerScore % 2 ==0){
+    console.log("score is even");
+} 
+else {console.log("score is odd");}
