@@ -47,7 +47,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 1000px;
 }
 
 main {
@@ -323,7 +323,7 @@ form textarea {
     outline: none;
     resize: none;
 }
-/* Style for the send button */
+
 form button {
     font-size: 20px;
     font-family: 'Outfit', sans-serif;
@@ -344,7 +344,7 @@ form button {
 }
 
 #success {
-    color: #28a745;
+    color: #19a83b;
 }
 
 /* Footer Styles */
@@ -355,7 +355,7 @@ footer {
     margin-top: 50px;
 }
 
-.footer-content {
+.footercontent {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -365,32 +365,32 @@ footer {
     gap: 40px;
 }
 
-.footer-section {
+.footersection {
     flex: 1;
     min-width: 200px;
 }
 
-.footer-section h3 {
+.footersection h3 {
     color: #E5D4ED;
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
-.footer-section p {
+.footersection p {
     color: #E5D4ED;
     font-size: 16px;
     line-height: 1.5;
 }
 
 /* Social Links */
-.social-links {
+.sociallinks {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.social-link {
+.sociallink {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -400,43 +400,39 @@ footer {
     padding: 5px 0;
 }
 
-.social-link:hover {
+.sociallink:hover {
     color: #E5D4ED;
     transform: translateX(5px);
 }
 
-.social-link svg {
+.sociallink svg {
     width: 20px;
     height: 20px;
 }
 
 /* theme switch */
-
 #theme-switch{
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    border-radius: 50%;
-    background-color: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
-#theme-switch svg {
-    fill: var(--text-color);
+#theme-switch svg{
+  fill: var(--text-color);
 }
-
 #theme-switch svg:last-child{
-    display: none;
+  display: none;
 }
-.lightmode #theme-switch svg:first-child{
-    display: none;
+.darkmode #theme-switch svg:first-child{
+  display: none;
 }
-.lightmode #theme-switch svg:last-child{
-    display: block;
+.darkmode #theme-switch svg:last-child{
+  display: block;
 }
-
